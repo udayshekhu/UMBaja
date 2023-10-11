@@ -1,8 +1,8 @@
 # BAJA INSTRAMENTALS 23-24
 
 ## Currently working on: 
-GPS, Time, Display \
-  * Having issues with the screen and the data displying \
+GPS, Time, Display 
+  * Having issues with the screen and the data displying 
   * Have to re-order new displays
 
 ## Planned to Implement:
