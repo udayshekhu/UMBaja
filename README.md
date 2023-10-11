@@ -2,8 +2,8 @@
 
 ## Currently working on: 
 GPS, Time, Display \
-  Having issues with the screen and the data displying 
-  Have to re-order new displays
+  * Having issues with the screen and the data displying \
+  * Have to re-order new displays
 
 ## Planned to Implement:
 - GPS, Time, Distance - (Should be done by Oct 21)
