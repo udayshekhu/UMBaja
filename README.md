@@ -33,3 +33,4 @@
 ## NOTES ON PREVIOUS PROGRESS
   
 https://randomnerdtutorials.com/guide-for-oled-display-with-arduino/
+https://lastminuteengineers.com/adxl335-accelerometer-arduino-tutorial/
