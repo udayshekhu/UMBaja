@@ -1,0 +1,83 @@
+#include <Adafruit_GPS.h>
+#include <SoftwareSerial.h>
+#include <Wire.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
+
+SoftwareSerial mySerial(3, 2);
+Adafruit_GPS GPS(&mySerial);
+
+#define SCREEN_WIDTH 128 // OLED display width, in pixels
+#define SCREEN_HEIGHT 64 // OLED display height, in pixels
+
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
+
+char c;
+
+const char* text = "BAJA Team";
+int textWidth = 6 * 9; // Assuming each character is 6 pixels wide
+int textX = (SCREEN_WIDTH - textWidth) / 2;
+int textY = (SCREEN_HEIGHT - 8) / 2;
+
+void setup() {
+  Serial.begin(9600);
+
+  if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) { // Address 0x3D for 128x64
+    Serial.println(F("SSD1306 allocation failed"));
+    for(;;);
+  }
+  delay(1000);
+  display.clearDisplay();
+
+  display.setTextSize(1.5);
+  display.setTextColor(WHITE);
+  display.setCursor(textX, textY);
+  display.println(text);
+  display.display();
+
+  GPS.begin(9600);
+  GPS.sendCommand(PMTK_SET_NMEA_OUTPUT_RMCGGA);
+  GPS.sendCommand(PMTK_SET_NMEA_UPDATE_1HZ);
+  delay(1000);
+}
+
+void loop() {
+  clearGPS();
+
+  while (!GPS.newNMEAreceived()) {
+    c = GPS.read();
+  }
+
+  GPS.parse(GPS.lastNMEA());
+
+  display.clearDisplay();
+  
+  // Display GPS time
+  display.setCursor(10, 10);
+  display.setTextSize(1);
+  display.print("Time: ");
+  display.print(GPS.hour, DEC);
+  display.print(':');
+  display.print(GPS.minute, DEC);
+  display.print(':');
+  display.print(GPS.seconds, DEC);
+  
+  // Display GPS speed
+  display.setCursor(10, 30);
+  display.print("Speed (km/h): ");
+  display.print(GPS.speed * 1.852); // Speed in km/h
+  
+  display.display();
+}
+
+void clearGPS() {
+  while (!GPS.newNMEAreceived()) {
+    c = GPS.read();
+  }
+  GPS.parse(GPS.lastNMEA());
+
+  while (!GPS.newNMEAreceived()) {
+    c = GPS.read();
+  }
+  GPS.parse(GPS.lastNMEA());
+}
