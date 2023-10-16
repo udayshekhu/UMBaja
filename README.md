@@ -29,10 +29,11 @@
 - Control the differential, CVT fans, and the brake lights
 
 ## NOTES ON PREVIOUS PROGRESS
- - GPS, Time, Display (Done Oct 15, 2023)
-  * Having issues with the screen and the data displying 
-  * Have to re-order new displays
-https://randomnerdtutorials.com/guide-for-oled-display-with-arduino/
+- GPS, Time, Display (Done Oct 15, 2023)
+  * Having issues with the screen and the data displying
+  * Issues revoled around using wrong volatge and incorrect data for the pins
+  * Have to re-order new displays \
+https://randomnerdtutorials.com/guide-for-oled-display-with-arduino/ \
 https://lastminuteengineers.com/adxl335-accelerometer-arduino-tutorial/
 
 
