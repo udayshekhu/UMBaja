@@ -3,7 +3,7 @@
 ## Currently working on: 
 - Accelerometer via Wifi (ESP32)
 ## Planned to Implement:
-- GPS, Time, Distance - # Done
+- GPS, Time, Distance - **Done**
 - Accelerometer data - (1 Month)
 - Implement a Fan for the powertrain - (2 weeks)
   * Operated either by temp or battery voltage
