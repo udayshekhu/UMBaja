@@ -7,12 +7,12 @@
 - Accelerometer data - (1 Month)
 - Implement a Fan for the powertrain - (2 weeks)
   * Operated either by temp or battery voltage
-- Better implemention of 4WD - (1-2 Weeks)
+- Better implementation of 4WD - (1-2 Weeks)
   * On the steering wheel if possible with a fail-safe
 - Fuel 
    * Will use time with testing data (2 days)
    * If we have extra time then we will look into other ideas
-   * Perphas a static pressure port from a tee which results in no extension of the fuel line (1 month)
+   * Perhaps a static pressure port from a tee which results in no extension of the fuel line (1 month)
 - Check for wheel speed (2-3 weeks)
 - Interaction between driver and team
 
