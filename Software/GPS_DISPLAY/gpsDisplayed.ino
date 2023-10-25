@@ -14,7 +14,7 @@ unsigned long previousDisplayTime = 0;
 bool showBAJATeam = true;
 unsigned long startTime = 0; // Track the start time
 
-int textWidth = 6 * 9;  // Assuming each character is 6 pixels wide
+int textWidth = 6 * 9;  // nice
 int textX = (SCREEN_WIDTH - textWidth) / 2;
 int textY = (SCREEN_HEIGHT - 8) / 2;
 
