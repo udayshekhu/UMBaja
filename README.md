@@ -5,10 +5,10 @@
   * Displays (current and new ones)
   * Low Voltage cut off
 ## Currently working on: 
-  We will be able to get ride frequency using a combination of string potentiometers and accelerometers
-    The AutoCad for the fitting of the accelerometer is done
-    The brackets for the potentiometer to sit is also done
-    We will look to test during the christmas break
+  We will be able to get ride frequency using a combination of string potentiometers and accelerometers.
+    The AutoCad for the fitting of the accelerometer is done.
+    The brackets for the potentiometer to sit is also done.
+    We will look to test during the christmas break.
   
   Along with that we are looking to get a sponsorship for radios (in-progress)
   Hoping that goes well we will also integrate a headset within the helmet probably just a simple ear piece
