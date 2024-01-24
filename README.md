@@ -4,6 +4,7 @@
 - Will need a budget to be able to fund:
   * Displays (current and new ones)
   * Low Voltage cut off
+  * RGB lighting
 ## Currently working on: 
 - Accelerometer via Wifi (ESP32) - There are many issues with the double intergration so this is looking less viable and not much progress was made within the last week.
  * Could use a string potentiometer alongside the accerlerometer to get displacement without having to double intergrate.
